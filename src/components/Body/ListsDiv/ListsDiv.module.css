@@ -1,0 +1,33 @@
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding-left: 0;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0, 0.7);
+}
+.list > li:hover{
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media(max-width:1250px){
+    .list{
+        width: 70%;
+    }
+}
+@media(max-width:850px){
+    .list{
+        font-size: 1rem;
+        width: 80%;
+    }
+}
+@media(max-width:600px){
+    .list{
+        width: 100%;
+        font-size: 0.6rem;
+    }
+}

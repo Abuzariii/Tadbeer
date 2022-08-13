@@ -1,0 +1,94 @@
+.swiper{
+    display: none;
+}
+
+/* Media Queries */
+@media(max-width:1250px){
+    .swiper {
+        display: flex;
+        margin-top: 3rem;
+        height: 35rem;
+        width: 50rem;
+    }
+    .slide>h1 {
+        width: 12rem;
+        font-size: 2.2rem;
+        color: white;
+        font-family: 'Manrope', sans-serif;
+        position: relative;
+        top: 30%;
+        left: 0%;
+    }
+    
+    .slide>h2 {
+        width: 8rem;
+        font-size: 1.8rem;
+        color: white;
+        font-family: 'Manrope', sans-serif;
+        position: relative;
+        left: 10%;
+        top: 30%;
+    }
+    .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4rem;
+    } 
+    .slide:hover {
+        cursor: grab;
+    }
+    
+    .slide1 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%,
+                    rgba(0, 0, 0)), url('../../Images/lady1.jpeg');
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+    
+    .slide2 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%,
+                    rgba(0, 0, 0)), url('../../Images/male.jpg');
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+    
+    .slide3 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%,
+                    rgba(0, 0, 0)), url('../../Images/lady2.jpg');
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+}
+@media(max-width:900px) {
+    .swiper {
+        width: 25rem;
+    }
+}
+@media(max-width:700px){
+    .swiper{
+        width: 20rem;
+        height: 30rem;
+    }
+}
+@media(max-width:500px){
+    .slide>h1 {
+        width: 12rem;
+        font-size: 2rem;
+        color: white;
+        font-family: 'Manrope', sans-serif;
+        position: relative;
+        top: 28%;
+        left: 0%;
+    }
+    
+    .slide>h2 {
+        width: 5rem;
+        font-size: 1.6rem;
+        color: white;
+        font-family: 'Manrope', sans-serif;
+        position: relative;
+        left: 5%;
+        top: 28%;
+    }
+}

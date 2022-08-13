@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notonaskharabic.css');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+.getSkill{
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+.getSkill > div{
+    height: 8rem;
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Noto Naskh Arabic', serif;
+    text-align: center;
+}
+.short{
+    font-size: 0.9;
+}
+.long{
+    font-size: 0.7rem;
+}
+
+/* Video Div */
+.videoDiv{
+    width: 84%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8vw;
+    margin-top: 5rem;
+}
+.office{
+    background-image: url('../../Images/office.jpg');
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+    width: 56rem;
+    height: 30rem;
+    border-radius: 2rem;
+}
+.aboutDiv{
+    height: 23.5%;
+    width: 54%;
+    background-color: rgb(151, 198, 128);
+    position: relative;
+    top: -12%;
+    left: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutDiv > div{
+    width: 50%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+}
+.d1{
+    border-right: 2px solid black;
+}
+.amount{
+    font-size: 2.9rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0, 0.7);
+}
+.value{
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 5rem;
+    margin-left: 0.4rem;
+    color: rgb(0, 0, 0, 0.7);
+}
+
+/* Qualities Div */
+.qualitiesDiv{
+    width: 24rem;
+    height: 30rem;
+}
+.qualitiesDiv > ul{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+}
+.qualitiesDiv > ul > li{
+    display: flex;
+}
+.imgDiv{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.imgDiv > img{
+    width: 1.7rem;
+}
+.textDiv{
+    width: 50%;
+    margin-left: 2.7rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.txt1{
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: 'Inconsolata', monospace;
+}
+.txt2{
+    color: rgb(0, 0, 0, 0.4);
+    font-weight: 600;
+    font-size: 0.9rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* Media Queries */
+@media(max-width:1250px){
+    .getSkill > div{
+        width: 44%;
+    }
+    .videoDiv{
+        width: 100%;
+        margin-left: 0;
+        justify-content: space-around;
+    }
+    .office{
+        width: 40rem;
+    }
+    .amount {
+        font-size: 2.5rem;
+    }
+    .value {
+        font-size: 0.9rem;
+    }
+    .qualitiesDiv{
+        width: 22rem;
+    }
+}
+@media(max-width:1000px){
+    .getSkill{
+        flex-direction: column-reverse;
+        height: 20rem;
+        justify-content: space-between;
+    }
+    .getSkill > div{
+        width: 70vw;
+    }
+    .short {
+        font-size: 0.7;
+    }
+    .long {
+        font-size: 0.6rem;
+    }
+    .videoDiv{
+        flex-direction: column-reverse;
+    }
+    .office{
+        height: 25rem;
+    }
+}
+@media(max-width:700px){
+    .getSkill > div{
+        width: 90vw;
+    }
+    .office{
+        border-radius: 1rem;
+        width: 98vw;
+        height: 15rem;
+    }
+    .d1{
+        border: none;
+        display: none;
+    }
+    .amount1{
+        display: none;
+    }
+    .value1{
+        display: none;
+    }
+    .aboutDiv > div{
+        width: 100%;
+    }
+    .amount {
+        margin-left: -15vw;
+        font-size: 2rem;
+    }
+    .value {
+        font-size: 0.7rem;
+    }
+}

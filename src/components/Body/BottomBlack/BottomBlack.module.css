@@ -1,0 +1,27 @@
+.btmBlack{
+    height: 3rem;
+    width: 100%;
+    background-color: rgb(30, 30, 47);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+.btmBlack a{
+    margin: 0 0.4rem;
+    color: rebeccapurple;
+}
+
+/* Media Queries */
+@media(max-width:1000px){
+    .btmBlack{
+        margin-top: 5rem;
+    }
+}
+@media(max-width:700px){
+    .btmBlack{
+        margin-top: 3rem;
+        font-size: 0.6rem;
+    }
+}

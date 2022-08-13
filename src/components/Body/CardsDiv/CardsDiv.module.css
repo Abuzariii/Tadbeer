@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+.CardsContainer{
+    margin-top: 3rem;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.CardsContainer > div{
+    width: 18.3rem;
+    display: flex;
+    flex-direction: column;
+    height: 33rem;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+.CardsContainer>div:hover{
+    cursor: pointer;
+}
+.CardsContainer>div:hover .secDiv > h1{
+    color: rgb(157, 232, 157);
+}
+.cardDiv1, .cardDiv2, .cardDiv3, .cardDiv4{
+    width: 100%;
+    background-position: center;
+    background-size: 100%;
+    border-radius: 1.8rem;
+}
+.cardDiv1{
+    background-image: url('../../Images/balloons.jpg');
+    height: 60%;
+}
+.cardDiv2{
+    background-image: url('../../Images/blocks.jpg');
+    height: 65%;
+}
+.cardDiv3{
+    background-image: url('../../Images/diary.jpg');
+    height: 75%;
+}
+.cardDiv4{
+    background-image: url('../../Images/sharpener.jpeg');
+    height: 60%;
+}
+.secDiv{
+    height: 25%;
+}
+.secDiv > h1{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.8rem;
+}
+.secDiv > h2{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+}
+
+/* Media Queries */
+@media(max-width:1250px){
+    .CardsContainer{
+        width: 100%;
+    }
+    .CardsContainer > div{
+        width: 15rem;
+        height: 30rem;
+    }
+}
+@media(max-width:900px){
+    .CardsContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
